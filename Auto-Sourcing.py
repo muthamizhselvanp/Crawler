@@ -16,7 +16,6 @@ for i in range(len(df)):
     df1.set_index = ('Search Text')
     url = 'http://www.google.co.in/search?q='+search_word
     r = requests.get(url)
-    r = requests.get(url)
     soup = BeautifulSoup(r.content)
     soup.find_all('a')
     j = 1
